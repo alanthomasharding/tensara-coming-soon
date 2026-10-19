@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tensara Medical — Coming soon</title>
+  <meta name="description" content="Tensara Medical is developing next-generation soft tissue repair for women's health. Our new website is coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <style>
+    :root {
+      --navy: #1c3454;
+      --slate: #5a6470;
+      --steel: #587899;
+      --mist: #f7f8fa;
+      --line: #e2e5ea;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      font-family: "Noto Sans", system-ui, -apple-system, sans-serif;
+      color: var(--navy);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 3rem 20px;
+    }
+    .logo { width: 260px; max-width: 70vw; height: auto; margin-bottom: 2.5rem; }
+    .eyebrow {
+      font-family: "Figtree", system-ui, sans-serif;
+      text-transform: uppercase; letter-spacing: .14em;
+      font-size: .8rem; font-weight: 600; color: var(--steel);
+      margin-bottom: .9rem;
+    }
+    h1 {
+      font-family: "Figtree", system-ui, sans-serif;
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 700; line-height: 1.2;
+      max-width: 20ch; margin-bottom: 1rem;
+    }
+    p.lead { color: var(--slate); font-size: 1.1rem; line-height: 1.6; max-width: 46ch; margin-bottom: 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 44px; padding: .75rem 1.5rem;
+      border-radius: 999px; background: var(--navy); color: #fff;
+      font-family: "Figtree", system-ui, sans-serif; font-weight: 600; text-decoration: none;
+      transition: background 200ms ease;
+    }
+    .btn:hover { background: #13253d; }
+    .btn:focus-visible { outline: 3px solid #f27d22; outline-offset: 3px; }
+    footer { padding: 1.5rem 20px; text-align: center; font-size: .85rem; color: var(--slate); border-top: 1px solid var(--line); }
+    @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="images/tensara-logo.png" width="600" height="323" alt="Tensara Medical">
+    <p class="eyebrow">New website coming soon</p>
+    <h1>Next-generation soft tissue repair for women's health.</h1>
+    <p class="lead">We're putting the finishing touches on our new site. In the meantime, we'd love to hear from you.</p>
+    <a class="btn" href="mailto:beccathomson@tensaramedical.com">beccathomson@tensaramedical.com</a>
+  </main>
+  <footer>&copy; <span id="year">2026</span> Tensara Medical, Inc.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
